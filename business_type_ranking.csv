@@ -1,0 +1,71 @@
+Priority Tier,Business Type,Priority Score,Avg Job Value,Website Need,Price Willingness,Reason
+1,builder,10,"£10k-£100k+",Critical,"£2,000-£3,500",Highest ticket items - customers extensively research before hiring - need portfolio + trust signals
+1,roofer,10,"£2k-£10k",Critical,"£2,000-£3,000",High-value emergency + project work - trust-dependent - losing jobs to competitors with sites
+1,plumber,10,"£150-£6k",Critical,"£2,000-£3,000",70%+ mobile searches - emergency-driven - single call-out covers website cost
+1,electrician,10,"£150-£5k",Critical,"£2,000-£3,000",Emergency + project work - NICEIC certs need display - competitive local market
+1,gas engineer,9,"£150-£5k",Critical,"£2,000-£3,000",Safety-critical - need to display Gas Safe certs - emergency call-outs cover ROI instantly
+1,heating engineer,9,"£150-£5k",Critical,"£2,000-£3,000",Boiler installs are high ticket - emergency-driven - trust signals essential
+1,kitchen fitter,9,"£5k-£20k",Critical,"£2,000-£3,500",High ticket installations - customers research heavily - before/after portfolio essential
+1,bathroom fitter,9,"£3k-£15k",Critical,"£2,000-£3,500",High ticket - portfolio-driven - before/after galleries close deals
+1,locksmith,8,"£80-£400",Critical,"£1,500-£2,500",Emergency-driven - MUST appear in Google searches - 24/7 service demands website
+2,carpenter,8,"£500-£5k",High,"£1,500-£2,500",Project-based work - portfolio essential - many have no web presence
+2,garage,8,"£200-£2k",High,"£1,500-£2,500",Service-based - MOT bookings online - competitive local market
+2,mot centre,8,"£40-£500",High,"£1,500-£2,000",Booking-driven - customers search MOT centres locally - high competition
+2,car body repair,8,"£500-£5k",High,"£1,500-£2,500",High value repairs - before/after portfolio essential - insurance referrals
+2,mobile mechanic,8,"£150-£1k",High,"£1,500-£2,000",Growing demand - need local SEO - service-area based targeting
+2,motorbike repair,7,"£100-£1k",High,"£1,000-£2,000",Niche market - specialist service - enthusiasts search online
+2,window cleaner,7,"£20-£200",High,"£1,000-£1,500",Most have no website - competitive local - booking add-on sells
+2,carpet cleaner,7,"£50-£300",High,"£1,000-£1,500",Service-based - most have no website - before/after sells
+2,handyman,7,"£50-£500",High,"£1,000-£1,500",High demand - most have no online presence - project gallery compelling
+2,cleaning service,7,"£50-£300",High,"£1,000-£1,500",Volume business - need online booking + trust - commercial cleaning premium
+3,painter decorator,7,"£300-£3k",High,"£1,000-£2,000",Portfolio-driven - referrals Google them - before/after sells
+3,gardener,7,"£100-£2k",High,"£1,000-£2,000",Summer peak - visual portfolio - many word-of-mouth only
+3,landscaper,7,"£500-£10k",High,"£1,500-£2,500",High ticket landscaping - before/after essential - summer peak
+3,personal trainer,7,"£30-£80/session",High,"£1,000-£2,000",Competitive market - need booking + testimonials - online presence = credibility
+3,photographer,7,"£500-£3k",Critical,"£1,000-£2,000",Portfolio IS the business - wedding/event bookings online
+3,physiotherapist,7,"£40-£80/session",High,"£1,500-£2,500",Professional service - booking + trust signals - insurance/credentials
+3,podiatrist,7,"£40-£70/session",High,"£1,500-£2,500",Healthcare - trust signals critical - booking system needed
+3,driving instructor,7,"£30-£40/hr",Medium,"£1,000-£1,500",Competitive local - online booking + lesson packages sell
+3,tutor,6,"£25-£60/hr",Medium,"£800-£1,500",Subject/area pages rank well - testimonials + booking essential
+3,caterer,6,"£500-£5k",Medium,"£1,000-£2,000",Portfolio + menu-driven - event booking - seasonal peaks
+3,dj,6,"£200-£1k",Medium,"£800-£1,500",Event bookings - demo reel/portfolio - weddings/events
+4,barber,6,"£15-£30/cut",Medium,"£500-£1,000",High volume - online booking is main sell - most have no website
+4,hairdresser,6,"£30-£80",Medium,"£500-£1,000",Booking system is killer feature - gallery of work - competitive local
+4,nail salon,6,"£20-£50",Medium,"£500-£1,000",Visual portfolio + booking - Instagram-only but website adds credibility
+4,beauty salon,6,"£20-£80",Medium,"£500-£1,000",Booking + treatment menu - competitive - visual portfolio
+4,eyelash technician,6,"£25-£60",Medium,"£500-£1,000",Visual portfolio - booking system - Instagram needs website backup
+4,massage therapist,6,"£40-£80",Medium,"£500-£1,000",Booking + treatment menu - trust signals for professional service
+4,dog groomer,6,"£30-£60",Medium,"£500-£1,000",Visual portfolio + booking - many have no online presence at all
+4,car valeting,6,"£30-£150",Medium,"£500-£1,000",Before/after essential - mobile service area pages - online booking
+4,tanning salon,5,"£10-£30",Low,"£500-£1,000",Low ticket - price sensitive - booking + pricing page
+4,waxing salon,5,"£15-£50",Low,"£500-£1,000",Similar to beauty salon - booking-driven - treatment list
+4,tattoo shop,5,"£100-£500",Low,"£500-£1,000",Instagram-first industry - but booking + credibility via website
+4,dance studio,5,"£8-£15/class",Medium,"£500-£1,000",Class schedules + booking - parent information - competitive local
+4,martial arts club,5,"£30-£80/mo",Medium,"£500-£1,000",Class schedule + membership signup - parent trust signals
+4,yoga studio,5,"£10-£20/class",Medium,"£500-£1,000",Class schedule + booking - teacher profiles - pricing
+5,cafe,4,"£5-£15",Low,"£300-£800",Menu + location/map - low budget - Google Business Profile often enough
+5,coffee shop,4,"£4-£10",Low,"£300-£800",Same as cafe - Instagram more important than website
+5,bakery,4,"£3-£10",Low,"£300-£800",Visual + location - low margin - product gallery + ordering
+5,florist,4,"£25-£100",Low,"£300-£800",Visual + ordering/delivery - seasonal peaks (weddings)
+5,takeaway,4,"£8-£20",Medium,"£500-£1,000",Online ordering is main sell - but JustEat/Deliveroo dominate
+5,chinese takeaway,4,"£8-£20",Medium,"£500-£1,000",Same as takeaway - delivery apps dominate online ordering
+5,fish and chips,4,"£8-£15",Low,"£400-£800",Traditional business - most have no website - low digital literacy
+5,indian takeaway,4,"£10-£25",Medium,"£500-£1,000",Menu + ordering - delivery app dominated but direct orders possible
+5,pizza place,4,"£8-£25",Medium,"£500-£1,000",Menu + delivery - very competitive - delivery apps dominate
+5,kebab shop,3,"£5-£15",Low,"£300-£600",Low margin - low digital adoption - delivery apps dominate
+5,burger bar,3,"£8-£18",Low,"£300-£600",Delivery app dominated - low digital adoption
+5,sandwich shop,3,"£5-£10",Low,"£300-£600",Low ticket - lunch-rush driven - GBP enough
+5,vape shop,3,"£5-£30",Low,"£300-£600",Retail pricing - age verification needed - low margin
+6,nursery,3,"£50-£80/day",Low,"£500-£1,000",Regulated - parent info + booking - OFSTED display
+6,day care,3,"£50-£80/day",Low,"£500-£1,000",Regulated - different priorities than marketing
+6,childminder,3,"£5-£10/hr",Low,"£300-£500",Very low budget - word of mouth primarily - regulated
+6,dental practice,3,"£50-£500",Low,"£1,000-£3,000",86% already have websites - selling redesigns - long sales cycle
+6,pharmacy,3,"£5-£50",Low,"£500-£1,000",Most already have sites - NHS services dominate - low marketing priority
+6,optician,3,"£50-£300",Low,"£500-£1,500",Most have sites - chain domination (Specsavers/Boots)
+6,charity shop,2,"£1-£20",Very Low,"£100-£300",Non-profit budget - volunteers run them - very low willingness
+6,second hand shop,2,"£5-£50",Very Low,"£200-£500",Low margin - low digital adoption - price sensitive
+6,vintage clothing,2,"£20-£100",Very Low,"£200-£500",Instagram/Depop-first - website not priority
+6,pet shop,2,"£5-£50",Very Low,"£300-£600",Retail - low margin - ecommerce needed for online store
+6,laundry service,3,"£10-£30",Low,"£500-£1,000",Service-based - booking + pricing - local demand varies
+6,dry cleaner,3,"£5-£20",Low,"£400-£800",Low margin - location-dependent - GBP often enough
+6,party planner,4,"£200-£2k",Medium,"£800-£1,500",Portfolio + enquiry form - event-based - seasonal

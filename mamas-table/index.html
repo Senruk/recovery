@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mama's Table | Traditional Italian Food, Cakes & Desserts | Caerphilly</title>
+<meta name="description" content="Mama's Table in Caerphilly. Traditional Italian food, handmade cakes, desserts, fresh pasta, lasagne, ravioli and sweet treats. Made fresh to order with Italian heart. Collection only.">
+<meta name="theme-color" content="#0a0a0a">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mamastable.co.uk/">
+<meta property="og:title" content="Mama's Table | Traditional Italian Food, Cakes & Desserts | Caerphilly">
+<meta property="og:description" content="Traditional Italian food, handmade cakes, desserts and sweet treats in Caerphilly. Made fresh to order with Italian heart. 5-star hygiene rating.">
+<meta property="og:image" content="https://mamastable.co.uk/img/logo.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mama's Table | Caerphilly Home Baking">
+<meta name="twitter:description" content="Traditional Italian food, handmade cakes and sweet treats in Caerphilly. Made fresh to order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="hero-frames/ezgif-frame-001.jpg">
+<link rel="icon" type="image/png" href="img/logo.png">
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Bakery", "FoodEstablishment", "LocalBusiness"],
+  "name": "Mama's Table",
+  "description": "Handmade Italian-inspired cakes, desserts and sweet treats in Caerphilly, South Wales. Made fresh to order.",
+  "url": "https://mamastable.co.uk",
+  "telephone": "+44-7934-597451",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "66 Wedgewood Court",
+    "addressLocality": "Caerphilly",
+    "addressRegion": "Wales",
+    "postalCode": "CF83 1RD",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "51.5727",
+    "longitude": "-3.2169"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "££",
+  "servesCuisine": ["Italian", "Bakery", "Cakes", "Desserts"],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://mamastable.co.uk/img/logo.png"
+  },
+  "sameAs": [
+    "https://www.instagram.com/mamastable87",
+    "https://www.facebook.com/mamastable87",
+    "https://www.tiktok.com/@mamas.table15"
+  ]
+}
+</script>
+</head>
+<style>
+.splash{position:fixed;inset:0;z-index:9999;background:var(--ink);display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity .5s ease-out}
+.splash.fadeout{opacity:0}
+.splash-logo{display:block;width:160px;height:auto;animation:splashPulse 2s ease-in-out infinite}
+@keyframes splashPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@media(prefers-reduced-motion:reduce){.splash-logo{animation:none}}
+/* Terms Modal */
+.terms-backdrop{position:fixed;bottom:1.5rem;left:1.5rem;z-index:9998;background:rgba(20,15,10,.92);backdrop-filter:blur(8px);border-radius:16px;padding:1.5rem;max-width:320px;width:calc(100vw - 3rem);box-shadow:0 8px 32px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.1)}
+.terms-modal{text-align:left}
+.terms-modal h2{font-family:var(--head);font-size:1rem;margin-bottom:.5rem;color:var(--white,#faf8f5)}
+.terms-modal p{color:rgba(250,248,245,.75);font-size:.8rem;line-height:1.6;margin-bottom:1rem}
+.terms-modal p a{color:var(--accent,#b07d4e);text-decoration:underline}
+.terms-btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.terms-btns .btn{padding:.6rem 1rem;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;display:inline-block}
+.btn-accept{background:var(--accent,#b07d4e);color:#fff}
+.btn-accept:hover{background:#9a6a3a}
+.btn-decline{background:transparent;color:rgba(250,248,245,.6);border:1px solid rgba(255,255,255,.2)}
+.btn-decline:hover{color:rgba(250,248,245,.9);border-color:rgba(255,255,255,.4)}
+@media(max-width:480px){.terms-backdrop{bottom:1rem;left:1rem;right:1rem;max-width:none;padding:1.25rem}}
+</style>
+<body>
+<div class="splash" id="splash">
+  <img src="img/logo.png" alt="Mama's Table" class="splash-logo">
+</div>
+<div class="terms-backdrop" id="terms-backdrop" role="dialog" aria-modal="true" aria-labelledby="terms-title" style="display:none">
+  <div class="terms-modal">
+    <h2 id="terms-title">Before you order</h2>
+    <p>Please read our <a href="terms.html" target="_blank">Terms & Conditions</a> before placing an order. Key points: minimum 48 hours notice, collection only from Caerphilly, all orders are final once deposit is paid.</p>
+    <div class="terms-btns">
+      <button class="btn btn-accept" id="terms-accept">I Accept &amp; Continue</button>
+      <a href="terms.html" class="btn btn-decline" target="_blank">Read T&Cs First</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var splash=document.getElementById('splash');
+  if(!splash)return;
+  var minTime=600,hardCap=4000,start=Date.now(),done=false;
+  function hide(){if(done)return;done=true;splash.classList.add('fadeout');setTimeout(function(){splash.parentNode.removeChild(splash)},500);}
+  window.addEventListener('load',hide);
+  setTimeout(hide,Math.max(hardCap,0));
+  setTimeout(hide,Math.max(minTime+(Date.now()-start),minTime));
+})();
+(function(){
+  var backdrop=document.getElementById('terms-backdrop');
+  var accept=document.getElementById('terms-accept');
+  if(!backdrop||!accept)return;
+  if(localStorage.getItem('mamas-terms-accepted')){backdrop.style.display='none';return;}
+  backdrop.style.display='flex';
+  accept.addEventListener('click',function(){
+    localStorage.setItem('mamas-terms-accepted','1');
+    backdrop.style.display='none';
+  });
+})();
+</script>
+
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="img/logo.png" alt="">
+      Mama's <span>Table</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#bakes">Our Bakes</a>
+      <a href="#values">Why Us</a>
+      <a href="products.html">Products</a>
+      <a href="#order">Order</a>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" class="nav-cta">Message us</a>
+    <div class="nav-socials">
+      <a href="https://www.facebook.com/mamastable87" target="_blank" rel="noopener" aria-label="Facebook" class="nav-social-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/mamastable87/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-social-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@mamas.table15" target="_blank" rel="noopener" aria-label="TikTok" class="nav-social-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.43V6.69a4.85 4.85 0 01-1-.02z"/></svg>
+      </a>
+    </div>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <video id="hero-video" fetchpriority="high" preload="auto" autoplay muted loop playsinline poster="hero-frames/ezgif-frame-001.jpg" src="videos/hero.mp4" title="Mama's Table — traditional Italian food"></video>
+  <div class="container hero-content">
+    <div class="rv">
+      <h1>A little taste of Italy,<br>made with <span class="accent">love</span> in Caerphilly</h1>
+      <p>Traditional Italian food, handmade cakes, desserts and sweet treats, all made fresh to order from our home kitchen in Caerphilly.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">📍 Based in Caerphilly</span>
+        <span class="hero-badge">🛍 Collection Only</span>
+        <span class="hero-badge">⏰ Minimum 48 Hours' Notice</span>
+      </div>
+      <div class="hero-stats rv rv-1">
+        <div class="hero-stat">
+        <strong class="num">5</strong>
+        <span class="rating-stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .587l3.668 7.562 8.332 1.151-6.064 5.828 1.48 8.279L12 17.446l-7.416 3.967 1.48-8.279L3.002 9.301z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .587l3.668 7.562 8.332 1.151-6.064 5.828 1.48 8.279L12 17.446l-7.416 3.967 1.48-8.279L3.002 9.301z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .587l3.668 7.562 8.332 1.151-6.064 5.828 1.48 8.279L12 17.446l-7.416 3.967 1.48-8.279L3.002 9.301z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .587l3.668 7.562 8.332 1.151-6.064 5.828 1.48 8.279L12 17.446l-7.416 3.967 1.48-8.279L3.002 9.301z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .587l3.668 7.562 8.332 1.151-6.064 5.828 1.48 8.279L12 17.446l-7.416 3.967 1.48-8.279L3.002 9.301z"/></svg>
+        </span>
+        <span>Hygiene Rating</span>
+      </div>
+        <div class="hero-stat"><strong>Homemade</strong><span>Fresh to order</span></div>
+        <div class="hero-stat"><strong>Italian</strong><span>Made with heart</span></div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" class="btn btn-primary">Message us on WhatsApp</a>
+        <a href="#bakes" class="btn btn-outline">See Our Bakes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HALLOWEEN -->
+<section class="section" id="halloween" style="background:var(--ink);color:var(--white);">
+  <div class="container">
+    <div class="section-title text-center" style="padding-top:clamp(3rem,6vw,5rem);">
+      <span class="tag" style="background:rgba(255,255,255,.15);color:#ff6b35;">🎃 Limited Time</span>
+      <h2 style="color:var(--white);margin-top:.5rem;">Halloween Specials</h2>
+      <p style="color:rgba(250,248,245,.8);max-width:500px;margin:0 auto 2rem;">
+        Spooky season is here! Check out our handcrafted Halloween treats — perfect for parties, parties, or just because.
+      </p>
+      <a href="products.html#halloween" class="btn btn-primary" style="background:#ff6b35;color:#fff;border-color:#ff6b35;font-size:1rem;padding:.85rem 2rem;">
+        See Halloween Specials 🎃
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text rv">
+        <span class="tag">About Us</span>
+        <h2>A little taste of Italy, made with love in Caerphilly 🇮🇹❤️</h2>
+        <p class="about-lead">Mama's Table was born from a simple idea: to share the food I love making for my own family with the people around me.</p>
+        <blockquote class="about-quote">"For me, food is about much more than simply eating, it's about family, memories, celebrations and bringing people together around a table."</blockquote>
+        <p>I'm Lucia, the face, hands (and very often the late nights!) behind Mama's Table. I'm Italian, living in Caerphilly, and cooking and baking have always been a huge part of my life. What started as a small home-based food business in September 2025 has grown into something I could never have imagined.</p>
+        <p>Today, Mama's Table creates handmade Italian-inspired food and desserts for our local community, private orders, events, markets and local businesses, and we even have our own little self-service Mama's Table Shed in Caerphilly.</p>
+        <p>Everything is made by me in small batches, with the same care I would put into something I was making for my own family. Mama's Table is proudly a small, independent local business and holds a <strong>5 Food Hygiene Rating</strong>.</p>
+        <p class="about-signoff">From my table to yours,<br><strong>Lucia ❤️</strong><br><em>Founder of Mama's Table</em></p>
+      </div>
+      <div class="about-image rv rv-1">
+        <img src="photos/cakes/WhatsApp Image 2026-09-02 at 10.00.38.jpeg" alt="Mama's Table homemade bakes" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY / BAKES -->
+<section class="section section-alt" id="bakes">
+  <div class="container">
+    <div class="section-title text-center">
+      <span class="tag">Our Bakes</span>
+      <h2>What we make</h2>
+      <p>Every bake is made fresh to order. Celebration cakes, everyday treats, custom bakes for any occasion.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/cakes/WhatsApp Image 2026-09-02 at 10.00.38.jpeg" alt="Celebration cakes" loading="lazy">
+        <span class="gallery-label">Celebration Cakes</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/cupcakes/WhatsApp Image 2026-09-02 at 09.55.13.jpeg" alt="Freshly baked cupcakes" loading="lazy">
+        <span class="gallery-label">Cupcakes</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/traybakes/WhatsApp Image 2026-09-02 at 09.54.55.jpeg" alt="Traybakes" loading="lazy">
+        <span class="gallery-label">Traybakes</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="products.html" class="btn btn-primary">See All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section" id="values">
+  <div class="container">
+    <div class="section-title text-center">
+      <span class="tag">Why Choose Mama's Table</span>
+      <h2>Baked with care, made for you</h2>
+      <p>Here's what sets our home baking apart from the rest.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card rv">
+        <h3>Fresh to Order</h3>
+        <p>Nothing sits on a shelf. Every order is baked fresh, packed with care, and collected from our kitchen on your chosen date.</p>
+      </div>
+      <div class="value-card rv rv-1">
+        <h3>Quality Ingredients</h3>
+        <p>Free-range eggs, real butter, Belgian chocolate, and carefully sourced flour and sugar. The good stuff, every time.</p>
+      </div>
+      <div class="value-card rv rv-2">
+        <h3>Fully Registered</h3>
+        <p>Registered with Caerphilly council. 5/5 food hygiene rating. Full public liability insurance for complete peace of mind.</p>
+      </div>
+      <div class="value-card rv rv-3">
+        <h3>Custom Orders</h3>
+        <p>Birthday cakes, wedding cakes, baby showers, corporate orders. Tell us what you need and we'll create something special.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER / CONTACT -->
+<section class="section section-alt" id="order">
+  <div class="container">
+    <div class="section-title text-center">
+      <span class="tag">Get in Touch</span>
+      <h2>Place an order</h2>
+      <p>Tell us what you're looking for and we'll get back to you with a quote and available dates.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info rv">
+        <h2>Let's talk bakes</h2>
+        <p>Whether it's a birthday cake, a batch of cupcakes, or something completely custom. We'd love to hear from you. Drop us a message or get in touch directly.</p>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <span>Message us on <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" style="color:inherit;font-weight:600;">WhatsApp</a></span>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <span><a href="mailto:sales@mamastable.co.uk">sales@mamastable.co.uk</a></span>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <span>Collection point: <strong>66 Wedgewood Court, CF83 1RD, Caerphilly</strong></span>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <span>5/5 food hygiene rated &bull; Fully insured</span>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <span>48 hours notice recommended for orders</span>
+        </div>
+      </div>
+      <form class="order-form rv rv-1" id="order-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5829a031-1d8b-4469-8a48-2f0d434fff0d">
+        <input type="hidden" name="subject" value="New Mama's Table Order Enquiry">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date needed</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div class="form-group">
+          <label for="message">What are you looking for?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you'd like: flavours, portions, occasion, dietary requirements..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Enquiry</button>
+        <div class="order-map">
+          <a href="https://www.google.com/maps?q=66+Wedgewood+Court,+CF83+1RD,+Caerphilly" target="_blank" rel="noopener" class="order-map-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            View collection point on Google Maps
+          </a>
+          <iframe
+            src="https://www.google.com/maps?q=66+Wedgewood+Court,+CF83+1RD,+Caerphilly&output=embed&zoom=15&height=200"
+            width="100%"
+            height="200"
+            style="border:0;border-radius:var(--radius);display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mama's Table collection point — 66 Wedgewood Court, Caerphilly">
+          </iframe>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ALLERGEN NOTICE -->
+<section class="section" id="allergens">
+  <div class="container">
+    <div class="allergen-banner">
+      <div class="allergen-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Allergen Information</h3>
+        <p>As a food business, we handle the <strong>14 major allergens</strong>. Please let us know about any allergies or dietary requirements when placing an order. Every order is made in a kitchen that handles allergens, we take every precaution but cannot guarantee a completely allergen-free environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS & EVENTS -->
+<section class="section section-alt" id="events">
+  <div class="container">
+    <div class="section-title text-center">
+      <span class="tag">Find Us Out &amp; About</span>
+      <h2>Come say hello at a market or event</h2>
+      <p>You can also find Mama's Table at selected local markets, food fairs and events around Caerphilly and South Wales. Follow us on Facebook and Instagram to see where we'll be next.</p>
+    </div>
+    <div class="events-socials">
+      <a href="https://www.facebook.com/mamastable87" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Follow on Facebook
+      </a>
+      <a href="https://www.instagram.com/mamastable87/" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Follow on Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-block">
+  <div class="container">
+    <div class="rv">
+      <h2>Ready to order?</h2>
+      <p>Get in touch and we'll create something special for you. Homemade, fresh, and made with Italian heart.</p>
+      <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" class="btn btn-primary">Message us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Sticky CTA -->
+<div class="sticky-cta" aria-label="Message us on WhatsApp" style="opacity:0;">
+  <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:6px;">
+    <img src="img/whatsapp.png" alt="WhatsApp" style="width:20px;height:20px;">
+    Message us
+  </a>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo"><span>Mama's</span> Table</span>
+        <p>Traditional Italian food, handmade cakes, desserts and sweet treats in Caerphilly. Made fresh to order with Italian heart and quality ingredients.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#bakes">Our Bakes</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#values">Why Us</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="links.html">Links</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="legal.html">Legal Information</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Caerphilly, South Wales</li>
+          <li><a href="https://www.facebook.com/mamastable87" target="_blank">Facebook: Mama's Table</a></li>
+          <li><a href="https://www.instagram.com/mamastable87/" target="_blank">Instagram: @mamastable87</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank">WhatsApp: +44 7934 597451</a></li>
+          <li><a href="mailto:sales@mamastable.co.uk">Email: sales@mamastable.co.uk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>&copy; 2026 Mama's Table. All rights reserved.</span>
+      <span>Caerphilly, South Wales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

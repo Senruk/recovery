@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Our Products | Mama's Table | Italian Birthday Cakes, Cookie Pies & More | Caerphilly</title>
+<meta name="description" content="Browse Mama's Table products — Italian birthday cakes, cookie pies, stuffed cookies, cheesecakes, tarts, traybakes, fresh pasta and more. Fresh to order in Caerphilly, South Wales.">
+<meta name="theme-color" content="#0a0a0a">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mamastable.co.uk/products.html">
+<meta property="og:title" content="Our Products | Mama's Table">
+<meta property="og:description" content="Italian birthday cakes, cookie pies, stuffed cookies, cheesecakes, tarts, croissants and more — all handmade fresh to order in Caerphilly.">
+<meta property="og:image" content="https://mamastable.co.uk/img/logo.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Our Products | Mama's Table Caerphilly">
+<meta name="twitter:description" content="Italian birthday cakes, cookie pies, cheesecakes, tarts and more — fresh to order in Caerphilly.">
+<!-- FAQPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far in advance should I order a birthday cake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We require a minimum of 48 hours' notice for all orders. For large or custom celebration cakes, we recommend ordering at least 5 days in advance to allow time for design consultation and production."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer gluten-free or allergen-friendly options?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We take allergens seriously and are happy to discuss your requirements. Please contact us before placing an order to discuss your needs. Every order is made in a kitchen that handles the 14 major allergens — we take every precaution but cannot guarantee a completely allergen-free environment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order a custom cake with specific flavours or decorations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we love custom orders! Contact us via WhatsApp or email with your requirements and we will provide a quote. Custom and bespoke orders require a consultation and a non-refundable deposit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you deliver, or is it collection only?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Collection only from our kitchen in Caerphilly (66 Wedgewood Court, CF83 1RD). We do not currently offer a delivery service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What payment methods do you accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment is accepted via bank transfer or cash on collection. Full payment is required at the time of order confirmation for standard orders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get a tasting box or sample before placing a large order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact us to discuss tasting options — we want every order to be exactly right for you. Get in touch via WhatsApp or email."
+      }
+    }
+  ]
+}
+</script>
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mamastable.co.uk"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "https://mamastable.co.uk/products.html"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Uniform image sizing for products page */
+.gallery-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.gallery-item { aspect-ratio: 1 / 1; overflow: hidden; border-radius: 12px; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-label{opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+.gallery-item:hover .gallery-label,.gallery-item:focus-within .gallery-label{opacity:1;transform:translateY(0)}
+.gallery-item{cursor:zoom-in}
+/* Lightbox */
+#lightbox{display:none;position:fixed;inset:0;z-index:9990;background:rgba(10,8,6,.92);align-items:center;justify-content:center;padding:1rem}
+#lightbox.open{display:flex}
+#lightbox-img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+#lightbox-close{position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1;padding:.5rem;opacity:.8}
+#lightbox-close:hover{opacity:1}
+@media(max-width: 1024px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
+@media(max-width: 900px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .gallery-label{opacity:1;transform:none;font-size:.8rem;padding:.5rem .75rem}
+  .section{padding:clamp(2.5rem,6vw,4rem) 0}
+  .section-title h2{font-size:clamp(1.4rem,4vw,1.8rem)}
+  .section-title p{font-size:.85rem}
+}
+@media(max-width: 600px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .gallery-item{aspect-ratio:4/3}
+  .gallery-label{font-size:.75rem;padding:.4rem .6rem;line-height:1.3}
+  .products-hero{padding-top:5rem;padding-bottom:1.5rem;min-height:30svh}
+  .products-hero h1{font-size:clamp(1.6rem,5vw,2.5rem)}
+  .products-hero p{font-size:.85rem}
+  .cake-description{font-size:.8rem}
+  .allergen-banner{padding:1rem}
+  .allergen-banner h3{font-size:1rem}
+  .allergen-banner p{font-size:.8rem}
+}
+/* Products hero — short banner, not full-screen */
+.products-hero{min-height:40svh;padding-top:6rem;padding-bottom:2rem;background:var(--bg)}
+.products-hero h1{font-size:clamp(2rem,5vw,3.5rem);text-align:center;margin-bottom:.5rem}
+.products-hero p{text-align:center;color:var(--ink-muted);font-size:.95rem;max-width:500px;margin:0 auto}
+/* Italian Birthday Cakes description */
+.cake-description{color:var(--ink-muted);font-size:.9rem;margin-top:.5rem;max-width:540px}
+/* Seasonal Favourites */
+.seasonal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:1.5rem}
+.seasonal-item{
+  background:var(--white);border-radius:var(--radius);
+  padding:2rem;border:1px solid var(--border);
+  display:flex;align-items:center;gap:1.5rem;
+  transition:transform .3s,box-shadow .3s;
+}
+.seasonal-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.seasonal-emoji{font-size:3.5rem;flex-shrink:0}
+.seasonal-item h3{font-family:var(--head);font-size:1.2rem;margin-bottom:.3rem}
+.seasonal-item p{font-size:.875rem;color:var(--ink-muted);line-height:1.5}
+.seasonal-note{text-align:center;margin-top:1.5rem;font-size:.9rem;color:var(--ink-muted)}
+.seasonal-note a{color:var(--accent);font-weight:600}
+@media(max-width:900px){.seasonal-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.seasonal-item{flex-direction:column;text-align:center;padding:1.5rem}}
+/* Allergen banner */
+.allergen-banner{
+  display:flex;align-items:flex-start;gap:1.25rem;
+  background:var(--surface);border:1.5px solid var(--border);
+  border-radius:var(--radius);padding:1.5rem;max-width:720px;margin:0 auto;
+}
+.allergen-icon{
+  flex-shrink:0;width:48px;height:48px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--accent-light);border-radius:50%;color:var(--accent);
+}
+.allergen-banner h3{font-family:var(--head);font-size:1.1rem;font-weight:700;margin-bottom:.4rem}
+.allergen-banner p{font-size:.9rem;color:var(--ink-muted);line-height:1.6}
+/* Terms Modal */
+.terms-backdrop{position:fixed;bottom:1.5rem;left:1.5rem;z-index:9998;background:rgba(20,15,10,.92);backdrop-filter:blur(8px);border-radius:16px;padding:1.5rem;max-width:320px;width:calc(100vw - 3rem);box-shadow:0 8px 32px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.1)}
+.terms-modal{text-align:left}
+.terms-modal h2{font-family:var(--head);font-size:1rem;margin-bottom:.5rem;color:var(--white,#faf8f5)}
+.terms-modal p{color:rgba(250,248,245,.75);font-size:.8rem;line-height:1.6;margin-bottom:1rem}
+.terms-modal p a{color:var(--accent,#b07d4e);text-decoration:underline}
+.terms-btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.terms-btns .btn{padding:.6rem 1rem;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;display:inline-block}
+.btn-accept{background:var(--accent,#b07d4e);color:#fff}
+.btn-accept:hover{background:#9a6a3a}
+.btn-decline{background:transparent;color:rgba(250,248,245,.6);border:1px solid rgba(255,255,255,.2)}
+.btn-decline:hover{color:rgba(250,248,245,.9);border-color:rgba(255,255,255,.4)}
+@media(max-width:480px){.terms-backdrop{bottom:1rem;left:1rem;right:1rem;max-width:none;padding:1.25rem}}
+</style>
+<link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<style>
+.splash{position:fixed;inset:0;z-index:9999;background:var(--ink);display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity .5s ease-out}
+.splash.fadeout{opacity:0}
+.splash-logo{display:block;width:160px;height:auto;animation:splashPulse 2s ease-in-out infinite}
+@keyframes splashPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@media(prefers-reduced-motion:reduce){.splash-logo{animation:none}}
+</style>
+<body>
+<div class="splash" id="splash">
+  <img src="img/logo.png" alt="Mama's Table" class="splash-logo">
+</div>
+<div id="lightbox" role="dialog" aria-label="Product image viewer"><img id="lightbox-img" alt=""><button id="lightbox-close" aria-label="Close image">&times;</button></div>
+<div class="terms-backdrop" id="terms-backdrop" role="dialog" aria-modal="true" aria-labelledby="terms-title" style="display:none">
+  <div class="terms-modal">
+    <h2 id="terms-title">Before you order</h2>
+    <p>Please read our <a href="terms.html" target="_blank">Terms & Conditions</a> before placing an order. Key points: minimum 48 hours notice, collection only from Caerphilly, all orders are final once deposit is paid.</p>
+    <div class="terms-btns">
+      <button class="btn btn-accept" id="terms-accept">I Accept &amp; Continue</button>
+      <a href="terms.html" class="btn btn-decline" target="_blank">Read T&Cs First</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var splash=document.getElementById('splash');
+  if(!splash)return;
+  var minTime=600,hardCap=4000,start=Date.now(),done=false;
+  function hide(){if(done)return;done=true;splash.classList.add('fadeout');setTimeout(function(){splash.parentNode.removeChild(splash)},500);}
+  window.addEventListener('load',hide);
+  setTimeout(hide,Math.max(hardCap,0));
+  setTimeout(hide,Math.max(minTime+(Date.now()-start),minTime));
+})();
+(function(){
+  var backdrop=document.getElementById('terms-backdrop');
+  var accept=document.getElementById('terms-accept');
+  if(!backdrop||!accept)return;
+  if(localStorage.getItem('mamas-terms-accepted')){backdrop.style.display='none';return;}
+  backdrop.style.display='flex';
+  accept.addEventListener('click',function(){
+    localStorage.setItem('mamas-terms-accepted','1');
+    backdrop.style.display='none';
+  });
+})();
+(function(){
+  var lb=document.getElementById('lightbox');
+  var lbImg=document.getElementById('lightbox-img');
+  var lbClose=document.getElementById('lightbox-close');
+  if(!lb||!lbImg||!lbClose)return;
+  document.querySelectorAll('.gallery-item img').forEach(function(img){
+    img.parentElement.addEventListener('click',function(){
+      lbImg.src=img.src;
+      lbImg.alt=img.alt||'Product image';
+      lb.classList.add('open');
+      document.body.style.overflow='hidden';
+    });
+  });
+  function closeLb(){lb.classList.remove('open');lbImg.src='';document.body.style.overflow='';}
+  lbClose.addEventListener('click',closeLb);
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))closeLb();});
+})();
+</script>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="img/logo.png" alt="Mama's Table">
+      Mama's <span>Table</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#cakes">Italian Birthday Cakes</a>
+      <a href="#cookie-pies">Cookie Pies</a>
+      <a href="#stuffed-cookies">Stuffed Cookies</a>
+      <a href="#italian">Italian</a>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" class="nav-cta">Message us</a>
+    <div class="nav-socials">
+      <a href="https://www.facebook.com/mamastable87" target="_blank" aria-label="Facebook" class="nav-social-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/mamastable87/" target="_blank" aria-label="Instagram" class="nav-social-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@mamas.table15" target="_blank" aria-label="TikTok" class="nav-social-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.43V6.69a4.85 4.85 0 01-1-.02z"/></svg>
+      </a>
+    </div>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- PAGE HEADER -->
+<section class="hero" style="min-height:40vh;padding-top:7rem">
+  <div class="container">
+    <div class="rv">
+      <h1>Our <span class="accent">Products</span></h1>
+      <p>Everything we bake is made fresh to order from our home kitchen in Caerphilly. Browse our range below. Minimum 48 hours' notice required for all orders.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ITALIAN BIRTHDAY CAKES -->
+<section class="section" id="cakes">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Italian Birthday Cakes</span>
+      <h2>Italian Birthday Cakes</h2>
+      <p>Tiered pricing: Classic <strong>£28/kg</strong> (min 2kg) · Premium <strong>£32/kg</strong> (min 2kg)</p>
+      <p class="cake-description">Handmade Italian birthday cakes in Caerphilly — lighter sponge layers filled with cream, fresh fruit and sometimes liqueur, finished with chocolate or mascarpone frosting. Beautiful, delicious, and baked fresh to order.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/cakes/2 Tier birthday cake with icing.jpg" alt="2 Tier Birthday Cake with Icing — Mama's Table" loading="lazy">
+        <span class="gallery-label">2 Tier Birthday Cake</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/cakes/Birthday cake with pastry cream and butter cream decoration.jpg" alt="Birthday Cake with Pastry Cream and Berries — Mama's Table" loading="lazy">
+        <span class="gallery-label">Pastry Cream & Berries Cake</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/cakes/Birthday naked cake.jpg" alt="Birthday Naked Cake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Birthday Naked Cake</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/cakes/Chocolate Birthday Cake .jpg" alt="Chocolate Birthday Cake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Chocolate Birthday Cake</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/cakes/Naked Birthday cake.jpg" alt="Naked Birthday Cake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Naked Birthday Cake</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/cakes/Sonic Birthday Cake.jpg" alt="Sonic Birthday Cake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Sonic Birthday Cake</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/cakes/Mother's day lemon cake.jpg" alt="Mother's Day Lemon Cake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Mother's Day Lemon Cake</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/cakes/Mother's day Naked Cake.jpg" alt="Mother's Day Naked Cake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Mother's Day Naked Cake</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/cakes/Limoncello Tiramisu'.jpg" alt="Limoncello Tiramisu Cake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Limoncello Tiramisu Cake</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COOKIE PIES -->
+<section class="section section-alt" id="cookie-pies">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Cookie Pies</span>
+      <h2>Cookie Pies</h2>
+      <p>Handmade cookie pies in Caerphilly — fudgy cookie base loaded with your favourite flavours. <strong>£4 each</strong>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Cookie Pie/Assorted Cookie pie.jpg" alt="Assorted Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Assorted Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Cookie Pie/Banofee cokie pie.jpg" alt="Banofee Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Banofee Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Cookie Pie/Birthday cake cookie pie.jpg" alt="Birthday Cake Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Birthday Cake Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Cookie Pie/Dubai Style Cookie Pie.jpg" alt="Dubai Style Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Dubai Style Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Cookie Pie/Freddo cookiePie.jpg" alt="Freddo Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Freddo Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Cookie Pie/Kinder Buoeno cookie pie.jpg" alt="Kinder Bueno Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Kinder Bueno Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Cookie Pie/Lion cookie pie.jpg" alt="Lion Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Lion Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Cookie Pie/Malteses cookie pie.jpg" alt="Maltesers Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Maltesers Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Cookie Pie/Milky way cookie pie.jpg" alt="Milkyway Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Milkyway Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Cookie Pie/RedVelvet CookiePie.jpg" alt="Red Velvet Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Red Velvet Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Cookie Pie/Sicilian cannolo cookiepie.jpg" alt="Sicilian Cannolo Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Sicilian Cannolo Cookie Pie</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Cookie Pie/Whole kinder Cookie pie.jpg" alt="Whole Kinder Cookie Pie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Whole Kinder Cookie Pie</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUFFED COOKIES -->
+<section class="section" id="stuffed-cookies">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Stuffed Cookies</span>
+      <h2>Stuffed Cookies</h2>
+      <p>Big, chewy stuffed cookies in Caerphilly — baked fresh with Nutella, Oreo, Rolo and more. <strong>£4 each</strong>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/cookies/Nutella stuffed cookie.jpg" alt="Nutella Stuffed Cookie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nutella Stuffed Cookie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/cookies/Oreo stuffed Cokies.jpg" alt="Oreo Stuffed Cookie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Oreo Stuffed Cookie</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/cookies/RedVelvet stuffed cookies.jpg" alt="Red Velvet Stuffed Cookie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Red Velvet Stuffed Cookie</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/cookies/Rolo stuffed cookies.jpg" alt="Rolo Stuffed Cookie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Rolo Stuffed Cookie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/cookies/Tiramisu' stuffed Cookies.jpg" alt="Tiramisu Stuffed Cookie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Tiramisu Stuffed Cookie</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BISCUIT SLICES -->
+<section class="section section-alt" id="biscuit-slices">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Biscuit Slices</span>
+      <h2>Biscuit Slices</h2>
+      <p>Handmade biscuit slices in Caerphilly — Kinder Bueno, Lotus, Millionaire and more. <strong>£4 each</strong>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Slice/KinderBueno biscuit slice.jpg" alt="Kinder Bueno Biscuit Slice — Mama's Table" loading="lazy">
+        <span class="gallery-label">Kinder Bueno Biscuit Slice</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Slice/Lotus biscut slice.jpg" alt="Lotus Biscuit Slice — Mama's Table" loading="lazy">
+        <span class="gallery-label">Lotus Biscuit Slice</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Slice/Milionaire Slice 1.jpg" alt="Millionaire Slice — Mama's Table" loading="lazy">
+        <span class="gallery-label">Millionaire Slice</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Slice/Milky way buiscuit slice.jpg" alt="Milkyway Biscuit Slice — Mama's Table" loading="lazy">
+        <span class="gallery-label">Milkyway Biscuit Slice</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHEESECAKES -->
+<section class="section" id="cheesecakes">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Cheesecakes</span>
+      <h2>Cheesecakes</h2>
+      <p>New York-style and continental cheesecakes in Caerphilly — baked creamy, topped with indulgent flavours. <strong>From £4</strong>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Cheescake/Burbon cheescake.jpg" alt="Bourbon Cheesecake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Bourbon Cheesecake</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Cheescake/Dubai Style Cheescake.jpg" alt="Dubai Style Cheesecake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Dubai Style Cheesecake</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Cheescake/Lotus CheesCake.jpg" alt="Lotus Cheesecake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Lotus Cheesecake</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Cheescake/Terry's Orange cheescake.jpg" alt="Terry's Orange Cheesecake — Mama's Table" loading="lazy">
+        <span class="gallery-label">Terry's Orange Cheesecake</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLONDIE & BROWNIES -->
+<section class="section section-alt" id="blondies-brownies">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Blondies & Brownies</span>
+      <h2>Blondies & Brownies</h2>
+      <p>Fudgy blondies and brownies in Caerphilly — rich, chewy and irresistible. <strong>£4 each</strong>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Blondie & Brownies/Kinder Blondie.jpg" alt="Kinder Blondie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Kinder Blondie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Blondie & Brownies/Mint Aero brownie.jpg" alt="Mint Aero Brownie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Mint Aero Brownie</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Blondie & Brownies/Nutella brownie.jpg" alt="Nutella Brownie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nutella Brownie</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Blondie & Brownies/Reeses brownie.jpg" alt="Reeses Brownie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Reeses Brownie</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Blondie & Brownies/Twix brownie.jpg" alt="Twix Brownie — Mama's Table" loading="lazy">
+        <span class="gallery-label">Twix Brownie</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESSERT POTS -->
+<section class="section" id="dessert-pots">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Dessert Pots</span>
+      <h2>Dessert Pots</h2>
+      <p>Individual cheesecake pots and profiteroles in Caerphilly — portion-perfect, ready to grab. <strong>From £4</strong>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Dessert Pot/Bluberry Cheescake Pot.jpg" alt="Blueberry Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Blueberry Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Dessert Pot/Bounty Cheescake Pot.jpg" alt="Bounty Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Bounty Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Dessert Pot/Classic Profitterol Pot.jpg" alt="Classic Profiterol Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Classic Profiterol Pot</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Dessert Pot/Dubai style cheescake Pot.jpg" alt="Dubai Style Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Dubai Style Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Dessert Pot/Freddo cheescake pot.jpg" alt="Freddo Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Freddo Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Dessert Pot/Happy Hippo Chiscake Pot.jpg" alt="Happy Hippo Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Happy Hippo Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Dessert Pot/Jammie Dodgers Cheescake Pot.jpg" alt="Jammie Dodgers Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Jammie Dodgers Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Dessert Pot/KinderBueno CheesCake Pot.jpg" alt="Kinder Bueno Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Kinder Bueno Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Dessert Pot/Lotus Cheescake Pot.jpg" alt="Lotus Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Lotus Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Dessert Pot/Mango & bluberry cheescake pot.jpg" alt="Mango & Blueberry Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Mango & Blueberry Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Dessert Pot/Mint Aero Cheescake Pot.jpg" alt="Mint Aero Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Mint Aero Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Dessert Pot/Nutella cheescake pot.jpg" alt="Nutella Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nutella Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Dessert Pot/Oreo Cheescake Pot.jpg" alt="Oreo Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Oreo Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Dessert Pot/Smarties Chiscake Pot.jpg" alt="Smarties Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Smarties Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Dessert Pot/Tiramisu' Pot.jpg" alt="Tiramisu Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Tiramisu Pot</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Dessert Pot/Toffifee Cheescake pot.jpg" alt="Toffifee Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Toffifee Cheesecake Pot</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Dessert Pot/Twix Cheescake Pot.jpg" alt="Twix Cheesecake Pot — Mama's Table" loading="lazy">
+        <span class="gallery-label">Twix Cheesecake Pot</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TARTS -->
+<section class="section section-alt" id="tarts">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Tarts</span>
+      <h2>Tarts</h2>
+      <p>Fresh fruit, chocolate and cream tarts in Caerphilly — elegant and handmade. <strong>From £4</strong>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Tart/Caramel & Chocolate tart.jpg" alt="Caramel & Chocolate Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Caramel & Chocolate Tart</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Tart/Cheescake tart.jpg" alt="Cheesecake Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Cheesecake Tart</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Tart/Chocolate Cheescake Tart.jpg" alt="Chocolate Cheesecake Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Chocolate Cheesecake Tart</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Tart/Cream Tart with Namelaka.jpg" alt="Cream Tart with Namelaka — Mama's Table" loading="lazy">
+        <span class="gallery-label">Cream Tart with Namelaka</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Tart/Fresh fruit tartlet.jpg" alt="Fresh Fruit Tartlet — Mama's Table" loading="lazy">
+        <span class="gallery-label">Fresh Fruit Tartlet</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Tart/Fruit Tart.jpg" alt="Fruit Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Fruit Tart</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Tart/Havana Tart with coffe and coconut.jpg" alt="Havana Tart with Coffee & Coconut — Mama's Table" loading="lazy">
+        <span class="gallery-label">Havana Tart Coffee & Coconut</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Tart/Malteses Cheescake tart.jpg" alt="Maltesers Cheesecake Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Maltesers Cheesecake Tart</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Tart/Nutella Cheescake tart.jpg" alt="Nutella Cheesecake Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nutella Cheesecake Tart</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Tart/Nutella Tart.jpg" alt="Nutella Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nutella Tart</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Tart/Panna Cotta stawberry tart.jpg" alt="Panna Cotta Strawberry Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Panna Cotta Strawberry Tart</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Tart/Strawberry Bavarese tart.jpg" alt="Strawberry Bavarese Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Strawberry Bavarese Tart</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Tart/Strawberry Tart.jpg" alt="Strawberry Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Strawberry Tart</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Tart/chocolate-strawberry-coconut-cheesecake-shell.jpeg" alt="Chocolate Strawberry & Coconut Cheesecake Shell — Mama's Table" loading="lazy">
+        <span class="gallery-label">Chocolate Strawberry & Coconut Cheesecake Shell</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Tart/fruit-cheesecake-tart.jpeg" alt="Fruit Cheesecake Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Fruit Cheesecake Tart</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Tart/nutella-cheesecake-tart.jpeg" alt="Nutella Cheesecake Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nutella Cheesecake Tart</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Tart/rolo-caramel-tart.jpeg" alt="Rolo & Caramel Tart — Mama's Table" loading="lazy">
+        <span class="gallery-label">Rolo & Caramel Tart</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CROISSANTS -->
+<section class="section" id="croissants">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Croissants</span>
+      <h2>Croissants</h2>
+      <p>Handmade croissants in Caerphilly — flaky, buttery, filled or plain. Filled <strong>£2.20</strong> · Plain <strong>£2.00</strong></p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Croissant/Assorted Croissant.jpg" alt="Assorted Croissants — Mama's Table" loading="lazy">
+        <span class="gallery-label">Assorted Croissants</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Croissant/Cream croissant.jpg" alt="Cream Croissant — Mama's Table" loading="lazy">
+        <span class="gallery-label">Cream Croissant</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Croissant/Dubai Style Croissant.jpg" alt="Dubai Style Croissant — Mama's Table" loading="lazy">
+        <span class="gallery-label">Dubai Style Croissant</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Croissant/Plain croissant.jpg" alt="Plain Croissant — Mama's Table" loading="lazy">
+        <span class="gallery-label">Plain Croissant</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Croissant/Toffifee & caramel croissant.jpg" alt="Toffifee & Caramel Croissant — Mama's Table" loading="lazy">
+        <span class="gallery-label">Toffifee & Caramel Croissant</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ITALIAN -->
+<section class="section section-alt" id="italian">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Italian Specialities</span>
+      <h2>Italian Specialities</h2>
+      <p>Homemade Italian pasta, festive treats and classic desserts — crafted in the Italian tradition in Caerphilly.</p>
+    </div>
+
+    <!-- Fresh Pasta -->
+    <h3 style="font-family:var(--head);font-size:1.3rem;margin:2rem 0 1rem;">Fresh Homemade Pasta & Ravioli</h3>
+    <div class="gallery-grid" style="margin-bottom:2rem;">
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Fresh Homemade Pasta/Fresh Pasta.jpg" alt="Fresh Pasta — Mama's Table" loading="lazy">
+        <span class="gallery-label">Fresh Pasta</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Fresh Homemade Pasta/Fresh tagliatelle pasta.jpg" alt="Fresh Tagliatelle — Mama's Table" loading="lazy">
+        <span class="gallery-label">Fresh Tagliatelle</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Fresh Homemade Pasta/Ravioli filled with Ricotta & Spinach.jpg" alt="Ricotta & Spinach Ravioli — Mama's Table" loading="lazy">
+        <span class="gallery-label">Ricotta & Spinach Ravioli</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Fresh Homemade Pasta/Honey & Nduja Ravioli.jpg" alt="Meat Ravioli — Mama's Table" loading="lazy">
+        <span class="gallery-label">Meat Ravioli</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Fresh Homemade Pasta/Salmon Ravioli.jpg" alt="Salmon Ravioli — Mama's Table" loading="lazy">
+        <span class="gallery-label">Salmon Ravioli</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Fresh Homemade Pasta/Tomato orecchiette (pasta) with dry ricotta cheese.jpg" alt="Tomato Orecchiette — Mama's Table" loading="lazy">
+        <span class="gallery-label">Tomato Orecchiette</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Fresh Homemade Pasta/Carbonara filled Ravioli.jpg" alt="Carbonara Filled Ravioli — Mama's Table" loading="lazy">
+        <span class="gallery-label">Carbonara Filled Ravioli</span>
+      </div>
+    </div>
+
+    <!-- Italian Desserts -->
+    <h3 style="font-family:var(--head);font-size:1.3rem;margin:2rem 0 1rem;">Italian Desserts</h3>
+    <div class="gallery-grid" style="margin-bottom:2rem;">
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Italian Specialty/Dessert/Assorted Italian pastry.jpg" alt="Assorted Italian Desserts — Mama's Table" loading="lazy">
+        <span class="gallery-label">Assorted Italian Desserts</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Italian Specialty/Dessert/Cannolo shell.jpg" alt="Cannolo Siciliano — Mama's Table" loading="lazy">
+        <span class="gallery-label">Cannolo Siciliano</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Italian Specialty/Dessert/Cassata.jpg" alt="Cassata — Mama's Table" loading="lazy">
+        <span class="gallery-label">Cassata</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Italian Specialty/Dessert/Classic tiramisu' tray.jpg" alt="Classic Tiramisu — Mama's Table" loading="lazy">
+        <span class="gallery-label">Classic Tiramisu</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Italian Specialty/Dessert/Nutella Occhi di Bue.jpg" alt="Nutella O'land — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nutella O'land</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Italian Specialty/Dessert/Sicilian Cannoli.jpg" alt="Sicilian Cannolo — Mama's Table" loading="lazy">
+        <span class="gallery-label">Sicilian Cannolo</span>
+      </div>
+    </div>
+
+    <!-- Italian Savoury -->
+    <h3 style="font-family:var(--head);font-size:1.3rem;margin:2rem 0 1rem;">Italian Savoury</h3>
+    <div class="gallery-grid" style="margin-bottom:2rem;">
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Italian Specialty/Savoury/Arancini-Bolognese filling.jpg" alt="Arancini Bolognese & Peas — Mama's Table" loading="lazy">
+        <span class="gallery-label">Arancini Bolognese & Peas</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Italian Specialty/Savoury/Meatball.jpg" alt="Classic Bombs — Mama's Table" loading="lazy">
+        <span class="gallery-label">Classic Bombs</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Italian Specialty/Savoury/Classic Lasagna.jpg" alt="Homemade Lasagna — Mama's Table" loading="lazy">
+        <span class="gallery-label">Homemade Lasagna</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Italian Specialty/Savoury/Meatball.jpg" alt="Homemade Meatballs — Mama's Table" loading="lazy">
+        <span class="gallery-label">Homemade Meatballs</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Italian Specialty/Savoury/Nduja Arancini.jpg" alt="Nduja Arancini — Mama's Table" loading="lazy">
+        <span class="gallery-label">Nduja Arancini</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Italian Specialty/Savoury/Pistachio and speck Arancino.jpg" alt="Pistachio Arancini — Mama's Table" loading="lazy">
+        <span class="gallery-label">Pistachio Arancini</span>
+      </div>
+    </div>
+
+    <!-- Festive -->
+    <h3 style="font-family:var(--head);font-size:1.3rem;margin:2rem 0 1rem;">Festive Specials</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Festivity/Christmas/Chocolate Panettone.jpg" alt="Chocolate Panettone — Mama's Table" loading="lazy">
+        <span class="gallery-label">Chocolate Panettone</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Festivity/Christmas/Classic panettone .jpg" alt="Classic Panettone — Mama's Table" loading="lazy">
+        <span class="gallery-label">Classic Panettone</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Festivity/Christmas/Pandoro.jpg" alt="Pandoro — Mama's Table" loading="lazy">
+        <span class="gallery-label">Pandoro</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/ITALIAN/Festivity/Christmas/Pistacchio Panettone.jpg" alt="Pistachio Panettone — Mama's Table" loading="lazy">
+        <span class="gallery-label">Pistachio Panettone</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/ITALIAN/Festivity/Easter/Assorted Easter Egg.jpg" alt="Assorted Easter Eggs — Mama's Table" loading="lazy">
+        <span class="gallery-label">Assorted Easter Eggs</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/ITALIAN/Festivity/Easter/Sicilian Cannoli Easter Egg.jpg" alt="Sicilian Cannoli Easter Eggs — Mama's Table" loading="lazy">
+        <span class="gallery-label">Sicilian Cannoli Easter Eggs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OTHER -->
+<section class="section" id="other">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Other Treats</span>
+      <h2>Other Treats</h2>
+      <p>Doughnuts, horns and sweet treats — handmade in Caerphilly.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item rv">
+        <img src="photos/Other/Crema Regina and jammie dodgers dounut.jpg" alt="Crema Regina & Jammie Dodgers Doughnuts — Mama's Table" loading="lazy">
+        <span class="gallery-label">Crema Regina & Jammie Dodgers Doughnuts</span>
+      </div>
+      <div class="gallery-item rv rv-1">
+        <img src="photos/Other/Crema Regina and kinder Doughnut.jpg" alt="Crema Regina & Kinder Doughnut — Mama's Table" loading="lazy">
+        <span class="gallery-label">Crema Regina & Kinder Doughnut</span>
+      </div>
+      <div class="gallery-item rv rv-2">
+        <img src="photos/Other/ferrero Rocher Horn.jpg" alt="Ferrero Rocher Horn — Mama's Table" loading="lazy">
+        <span class="gallery-label">Ferrero Rocher Horn</span>
+      </div>
+      <div class="gallery-item rv">
+        <img src="photos/Other/Semifreddo Tiramisu'.jpg" alt="Semifreddo Tiramisu — Mama's Table" loading="lazy">
+        <span class="gallery-label">Semifreddo Tiramisu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEASONAL FAVOURITES -->
+<section class="section section-alt" id="seasonal">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Seasonal Favourites</span>
+      <h2>Seasonal Treats</h2>
+      <p>Available at certain times of the year. Check back closer to each event for this year's specials.</p>
+    </div>
+    <div class="seasonal-grid">
+      <div class="seasonal-item">
+        <div class="seasonal-emoji" aria-hidden="true">🎃</div>
+        <h3>Halloween</h3>
+        <p>Spooky cakes, cupcakes and treats — available throughout October. <a href="products.html#halloween">See what's baking this year 🎃</a></p>
+      </div>
+      <div class="seasonal-item">
+        <div class="seasonal-emoji" aria-hidden="true">🎄</div>
+        <h3>Christmas</h3>
+        <p>Panettone, festive treats and seasonal specials. Available in December.</p>
+      </div>
+      <div class="seasonal-item">
+        <div class="seasonal-emoji" aria-hidden="true">🐣</div>
+        <h3>Easter</h3>
+        <p>Easter eggs, hot cross cupcakes and seasonal bakes. Available in April.</p>
+      </div>
+      <div class="seasonal-item">
+        <div class="seasonal-emoji" aria-hidden="true">🌷</div>
+        <h3>Mother's Day</h3>
+        <p>Special Mother's Day cakes and treats. Available in March.</p>
+      </div>
+      <div class="seasonal-item">
+        <div class="seasonal-emoji" aria-hidden="true">💝</div>
+        <h3>Valentine's Day</h3>
+        <p>Heart-shaped treats and romantic specials. Available in February.</p>
+      </div>
+    </div>
+    <p class="seasonal-note">Want to pre-order for a special occasion? <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" rel="noopener">Message us on WhatsApp</a> or <a href="mailto:sales@mamastable.co.uk">email us</a> to find out what's available.</p>
+  </div>
+</section>
+
+<!-- ALLERGEN NOTICE -->
+<section class="section" id="allergens">
+  <div class="container">
+    <div class="allergen-banner">
+      <div class="allergen-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Allergen Information</h3>
+        <p>As a food business, we handle the <strong>14 major allergens</strong>. Please let us know about any allergies or dietary requirements when placing an order. Every order is made in a kitchen that handles allergens, we take every precaution but cannot guarantee a completely allergen-free environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-block">
+  <div class="container">
+    <div class="rv">
+      <h2>Ready to order?</h2>
+      <p>Minimum 48 hours' notice required. Collection only, pick up from our kitchen in Caerphilly.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;">
+        <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" class="btn btn-primary">Message us on WhatsApp</a>
+        <a href="mailto:sales@mamastable.co.uk" class="btn btn-outline">Email us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo"><span>Mama's</span> Table</span>
+        <p>Home baking in Caerphilly. Celebration cakes, cupcakes, traybakes and sweet treats, handmade to order with quality ingredients.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html#order">Order</a></li>
+          <li><a href="links.html">Links</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="legal.html">Legal Information</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Caerphilly, South Wales</li>
+          <li><a href="https://www.instagram.com/mamastable87/" target="_blank">Instagram: @mamastable87</a></li>
+          <li><a href="https://www.facebook.com/mamastable87" target="_blank">Facebook: Mama's Table</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank">WhatsApp: +44 7934 597451</a></li>
+          <li><a href="mailto:sales@mamastable.co.uk">Email: sales@mamastable.co.uk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>&copy; 2026 Mama's Table. All rights reserved.</span>
+      <span>Caerphilly, South Wales</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky CTA -->
+<div class="sticky-cta" aria-label="Message us on WhatsApp" style="opacity:0;">
+  <a href="https://api.whatsapp.com/send?phone=447934597451" target="_blank" style="color:inherit; text-decoration:none; display:flex; align-items:center; gap:6px;">
+    <img src="img/whatsapp.png" alt="WhatsApp" style="width:20px;height:20px;" aria-hidden="true">
+    Message us
+  </a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

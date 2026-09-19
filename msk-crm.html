@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSK CRM — Lead Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #1a1a2e;
+    padding: 2rem;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;
+  }
+  h1 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; }
+  h1 span { color: #6c5ce7; }
+  .stats {
+    display: flex; gap: 1rem;
+  }
+  .stat {
+    background: #fff; border-radius: 8px; padding: 0.6rem 1.2rem;
+    text-align: center; border: 1px solid #e8e8ee;
+  }
+  .stat .num { font-size: 1.3rem; font-weight: 700; display: block; }
+  .stat .label { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  .filters {
+    display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;
+  }
+  .filters button {
+    padding: 0.4rem 1rem; border-radius: 6px; border: 1px solid #ddd;
+    background: #fff; font-family: inherit; font-size: 0.8rem; cursor: pointer;
+    transition: all .2s;
+  }
+  .filters button:hover { border-color: #6c5ce7; }
+  .filters button.active {
+    background: #6c5ce7; color: #fff; border-color: #6c5ce7;
+  }
+
+  .leads-grid {
+    display: grid; gap: 0.75rem;
+  }
+  .lead-card {
+    background: #fff; border-radius: 10px; padding: 1.2rem 1.5rem;
+    border: 1px solid #e8e8ee; display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr 0.8fr 0.5fr;
+    gap: 1rem; align-items: center; font-size: 0.85rem; cursor: pointer;
+    transition: all .2s;
+  }
+  .lead-card:hover { border-color: #6c5ce7; box-shadow: 0 2px 8px rgba(108,92,231,.08); }
+  .lead-card .name { font-weight: 600; }
+  .lead-card .phone { color: #6c5ce7; }
+  .lead-card .source {
+    font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 4px;
+    background: #f0f0f5; text-align: center; width: fit-content;
+  }
+  .lead-card .time { color: #888; font-size: 0.8rem; }
+  .lead-card .status {
+    font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 12px;
+    text-align: center; width: fit-content; font-weight: 500;
+  }
+  .status.new { background: #e8f4fd; color: #1a73e8; }
+  .status.contacted { background: #fef3e2; color: #e67e22; }
+  .status.qualified { background: #e8f8e8; color: #27ae60; }
+  .status.lost { background: #fde8e8; color: #e74c3c; }
+  .status.won { background: #27ae60; color: #fff; }
+
+  .lead-card .expand {
+    justify-self: end; color: #999; font-size: 0.8rem;
+  }
+
+  .lead-detail {
+    display: none;
+    background: #f8f9fc; border-radius: 0 0 10px 10px;
+    padding: 1.2rem 1.5rem; border: 1px solid #e8e8ee; border-top: 0;
+    margin-top: -0.75rem; margin-bottom: 0.75rem;
+    grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.85rem;
+  }
+  .lead-detail.open { display: grid; }
+  .lead-detail .field label { display: block; font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+  .lead-detail .actions { grid-column: 1 / -1; display: flex; gap: 0.5rem; padding-top: 0.5rem; }
+  .lead-detail .actions button {
+    padding: 0.4rem 1rem; border-radius: 6px; border: 1px solid #ddd;
+    background: #fff; font-family: inherit; font-size: 0.8rem; cursor: pointer;
+  }
+  .lead-detail .actions button:hover { border-color: #6c5ce7; }
+  .lead-detail .actions .btn-edit {
+    background: #6c5ce7; color: #fff; border-color: #6c5ce7;
+  }
+
+  .add-lead-btn {
+    position: fixed; bottom: 2rem; right: 2rem;
+    width: 52px; height: 52px; border-radius: 50%;
+    background: #6c5ce7; color: #fff; border: none;
+    font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 16px rgba(108,92,231,.3);
+    transition: transform .2s;
+  }
+  .add-lead-btn:hover { transform: scale(1.1); }
+
+  .empty-state {
+    text-align: center; padding: 4rem 2rem; color: #888;
+  }
+  .empty-state h2 { font-family: 'Outfit', sans-serif; color: #555; margin-bottom: 0.5rem; }
+  .empty-state .phone-note {
+    background: #fff; border: 1px dashed #ddd; border-radius: 8px;
+    padding: 1rem; margin-top: 1.5rem; font-size: 0.85rem;
+    display: inline-block;
+  }
+  .empty-state .phone-note code {
+    background: #eee; padding: 0.15rem 0.4rem; border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    .lead-card { grid-template-columns: 1fr 1fr; font-size: 0.8rem; }
+    .lead-card .time, .lead-card .expand { display: none; }
+    .lead-detail.open { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>MSK <span>CRM</span></h1>
+      <p style="font-size:0.8rem;color:#888;">Lead Manager</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><span class="num" id="total-count">0</span><span class="label">Total</span></div>
+      <div class="stat"><span class="num" id="new-count">0</span><span class="label">New</span></div>
+      <div class="stat"><span class="num" id="today-count">0</span><span class="label">Today</span></div>
+    </div>
+  </header>
+
+  <div class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="new">New</button>
+    <button data-filter="contacted">Contacted</button>
+    <button data-filter="qualified">Qualified</button>
+    <button data-filter="won">Won</button>
+    <button data-filter="lost">Lost</button>
+  </div>
+
+  <div class="leads-grid" id="leads-container">
+    <div class="empty-state" id="empty-state">
+      <h2>No leads yet</h2>
+      <p>Leads from your AI receptionist and call sheet will appear here.</p>
+      <div class="phone-note">
+        AI Receptionist sends leads here automatically when it captures calls.<br>
+        <code>POST /api/lead</code> &rarr; n8n &rarr; this dashboard
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="add-lead-btn" id="add-lead-btn" title="Add lead manually">+</button>
+
+<script>
+// ========== DATA ==========
+let leads = [];
+const AI_RECEPTIONIST_URL = 'http://localhost:3457';
+
+// ========== HELPERS ==========
+function timeAgo(ts) {
+  const diff = Date.now() - new Date(ts).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 1) return 'Just now';
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  const days = Math.floor(hrs / 24);
+  return days + 'd ago';
+}
+
+function todayStr() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+// ========== RENDER ==========
+function render(filter = 'all') {
+  const container = document.getElementById('leads-container');
+  const empty = document.getElementById('empty-state');
+  let filtered = leads;
+
+  if (filter !== 'all') {
+    filtered = leads.filter(l => l.status === filter);
+  }
+
+  // Update stats
+  document.getElementById('total-count').textContent = leads.length;
+  document.getElementById('new-count').textContent = leads.filter(l => l.status === 'new').length;
+  document.getElementById('today-count').textContent = leads.filter(l =>
+    l.timestamp && l.timestamp.slice(0, 10) === todayStr()
+  ).length;
+
+  if (filtered.length === 0) {
+    empty.style.display = 'block';
+    container.innerHTML = '';
+    container.appendChild(empty);
+    return;
+  }
+
+  empty.style.display = 'none';
+  container.innerHTML = filtered.map(l => `
+    <div class="lead-card" onclick="toggleDetail(${l.id})" data-id="${l.id}">
+      <div class="name">${esc(l.name)}</div>
+      <div class="phone">${esc(l.phone)}</div>
+      <div class="source">${esc(l.source || 'manual')}</div>
+      <div class="time">${l.timestamp ? timeAgo(l.timestamp) : ''}</div>
+      <div class="status ${l.status}">${l.status}</div>
+      <div class="expand">&#9660;</div>
+    </div>
+    <div class="lead-detail" id="detail-${l.id}">
+      <div class="field"><label>Name</label><div>${esc(l.name)}</div></div>
+      <div class="field"><label>Phone</label><div>${esc(l.phone)}</div></div>
+      <div class="field"><label>Email</label><div>${esc(l.email || '—')}</div></div>
+      <div class="field"><label>Address</label><div>${esc(l.address || '—')}</div></div>
+      <div class="field"><label>Job Type</label><div>${esc(l.jobType || l.message || '—')}</div></div>
+      <div class="field"><label>Notes</label><div>${esc(l.notes || '—')}</div></div>
+      <div class="field"><label>Business</label><div>${esc(l.business || '—')}</div></div>
+      <div class="field"><label>Source</label><div>${esc(l.source || '—')}</div></div>
+      <div class="field"><label>Timestamp</label><div>${l.timestamp ? new Date(l.timestamp).toLocaleString() : '—'}</div></div>
+      <div class="field">
+        <label>Status</label>
+        <div><select onchange="updateStatus(${l.id}, this.value)">
+          <option ${l.status === 'new' ? 'selected' : ''}>new</option>
+          <option ${l.status === 'contacted' ? 'selected' : ''}>contacted</option>
+          <option ${l.status === 'qualified' ? 'selected' : ''}>qualified</option>
+          <option ${l.status === 'won' ? 'selected' : ''}>won</option>
+          <option ${l.status === 'lost' ? 'selected' : ''}>lost</option>
+        </select></div>
+      </div>
+      <div class="actions">
+        <button onclick="event.stopPropagation(); updateStatus(${l.id}, 'contacted')">Mark Contacted</button>
+        <button onclick="event.stopPropagation(); updateStatus(${l.id}, 'qualified')">Mark Qualified</button>
+        <button class="btn-edit" onclick="event.stopPropagation(); deleteLead(${l.id})">Delete</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function esc(s) {
+  if (!s) return '';
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+let openDetail = null;
+function toggleDetail(id) {
+  const detail = document.getElementById('detail-' + id);
+  if (!detail) return;
+  const isOpen = detail.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.lead-detail').forEach(d => d.classList.remove('open'));
+  if (!isOpen) detail.classList.add('open');
+}
+
+// ========== STATUS MANAGEMENT ==========
+function updateStatus(id, status) {
+  const lead = leads.find(l => l.id === id);
+  if (lead) {
+    lead.status = status;
+    render(document.querySelector('.filters .active')?.dataset?.filter || 'all');
+    saveToStorage();
+  }
+}
+
+function deleteLead(id) {
+  if (!confirm('Delete this lead?')) return;
+  leads = leads.filter(l => l.id !== id);
+  render(document.querySelector('.filters .active')?.dataset?.filter || 'all');
+  saveToStorage();
+}
+
+// ========== MANUAL ADD ==========
+document.getElementById('add-lead-btn').addEventListener('click', () => {
+  const name = prompt('Name:');
+  if (!name) return;
+  const phone = prompt('Phone:') || '';
+  const job = prompt('Job type / message:') || '';
+  const lead = {
+    id: Date.now(),
+    name, phone,
+    jobType: job,
+    message: job,
+    email: '',
+    address: '',
+    notes: '',
+    business: 'Manual entry',
+    source: 'manual',
+    timestamp: new Date().toISOString(),
+    status: 'new'
+  };
+  leads.unshift(lead);
+  saveToStorage();
+  render(document.querySelector('.filters .active')?.dataset?.filter || 'all');
+});
+
+// ========== FILTERS ==========
+document.querySelectorAll('.filters button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    render(btn.dataset.filter);
+  });
+});
+
+// ========== STORAGE ==========
+function saveToStorage() {
+  localStorage.setItem('msk-crm-leads', JSON.stringify(leads));
+}
+
+function loadFromStorage() {
+  try {
+    const stored = localStorage.getItem('msk-crm-leads');
+    if (stored) leads = JSON.parse(stored);
+  } catch(e) {}
+}
+
+// ========== FETCH FROM AI RECEPTIONIST ==========
+async function fetchFromReceptionist() {
+  try {
+    const res = await fetch(AI_RECEPTIONIST_URL + '/api/leads');
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!Array.isArray(data)) return;
+
+    // Merge with existing (keep status, add new ones)
+    const existingIds = new Set(leads.map(l => l.originalId || l.id));
+    for (const lead of data) {
+      if (!existingIds.has(lead.id)) {
+        leads.unshift({
+          ...lead,
+          originalId: lead.id,
+          id: Date.now() + Math.random() * 1000,
+          status: 'new'
+        });
+      }
+    }
+    saveToStorage();
+    render(document.querySelector('.filters .active')?.dataset?.filter || 'all');
+  } catch(e) {
+    console.log('Receptionist offline — leads from manual entry only');
+  }
+}
+
+// ========== TIMERS ==========
+// Poll AI receptionist every 30 seconds for new leads
+setInterval(fetchFromReceptionist, 30000);
+
+// ========== INIT ==========
+loadFromStorage();
+fetchFromReceptionist().then(() => {
+  render('all');
+});
+</script>
+</body>
+</html>
