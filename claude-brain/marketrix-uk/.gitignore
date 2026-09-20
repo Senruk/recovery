@@ -1,0 +1,10 @@
+# image tool cache
+.impeccable/
+
+# temp screenshots / verification renders
+_*.png
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,24 @@
+---
+name: "SM Home Improvements Website"
+description: "Premium client website for Cardiff home improvement company — live at smhomeimprovements.uk"
+type: project
+status: complete
+---
+
+# SM Home Improvements Website
+
+**Status:** Live
+**URL:** smhomeimprovements.uk
+**Stack:** HTML, CSS, JavaScript, Netlify, Web3Forms
+**Client:** SM Home Improvements Ltd (Sean)
+
+## What It Does
+- Full-service home improvement company website
+- Black & gold premium theme
+- Client photo gallery integration
+- Contact form via Web3Forms
+- Mobile responsive
+
+## Related
+- [[../Sessions/2026-07-07 SM Home Improvements Web|Latest Fixes]]
+- [[../Sessions/Session 2026-07-03 SM Home Improvements Website|Build Session]]

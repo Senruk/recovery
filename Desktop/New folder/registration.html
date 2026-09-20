@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+</head>
+<body style="background-color:tomato;">
+
+  <h1>Student Registration</h1>
+
+  <form action="thankyou.html" method="post" onsubmit="return validateForm()">
+    
+    <label for="studentId">Student ID:</label><br>
+    <input type="number" id="studentId" name="studentId" required><br><br>
+
+    <label for="studentName">Student Name:</label><br>
+    <input type="text" id="studentName" name="studentName" required><br><br>
+
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <p>Course type:</p>
+    <input type="radio" id="fullTime" name="time" value="Full Time" required>
+    <label for="fullTime">Full Time</label><br>
+    <input type="radio" id="partTime" name="time" value="Part Time">
+    <label for="partTime">Part Time</label><br><br>
+
+    <p>Course Name:</p>
+    <input type="checkbox" id="course1" name="course" value="ICT 1">
+    <label for="course1">ICT 1</label><br>
+    <input type="checkbox" id="course2" name="course" value="ICT 2">
+    <label for="course2">ICT 2</label><br>
+    <input type="checkbox" id="course3" name="course" value="ICT 3">
+    <label for="course3">ICT 3</label><br><br>
+
+    <label for="fruit">Choose a fruit:</label><br>
+    <select name="fruits" id="fruit" required>
+      <option value="" disabled selected>Select a fruit</option>
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+      <option value="avocado">Avocado</option>
+    </select><br><br>
+
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any additional info..."></textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>

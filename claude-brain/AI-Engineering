@@ -1,0 +1,81 @@
+---
+name: AI Engineering
+description: Full 9-lesson AI engineering course. LLMs, RAG, fine-tuning, agents, MCP, deployment. Explained simply with code.
+---
+
+# 🧠 AI Engineering — Full Course
+
+**Started:** 2026-07-23 | **Goal:** £70k+ AI engineering role
+
+---
+
+## 📋 Course Structure
+
+### CORE TRACK (Lessons 1-5)
+*Foundation — how AI language models work and how to use them*
+
+| # | Lesson | What You'll Build |
+|---|--------|-------------------|
+| 1 | [[L01-Transformers-Basics\|Transformers & How LLMs Work]] | A tiny transformer from scratch in Python |
+| 2 | [[L02-LLM-APIs\|LLM APIs & Prompt Engineering]] | Your first AI-powered app with Claude/GPT |
+| 3 | [[L03-RAG\|RAG - Retrieval Augmented Generation]] | A search engine that answers from YOUR documents |
+| 4 | [[L04-QLoRA-FineTuning\|Fine-tuning with QLoRA]] | Teach a model your own custom knowledge |
+| 5 | [[L05-Evaluation\|Evaluation & Testing]] | Score your AI's answers like a test |
+
+### AGENTIC TRACK (Lessons 6-9)
+*Advanced — giving AI the ability to DO things*
+
+| # | Lesson | What You'll Build |
+|---|--------|-------------------|
+| 6 | [[L06-Function-Calling\|Function Calling & Tool Use]] | An AI that can search the web & calculate |
+| 7 | [[L07-MCP\|MCP - Model Context Protocol]] | Connect AI to your files and databases |
+| 8 | [[L08-Multi-Agent\|Multi-Agent Systems]] | A team of AI agents working together |
+| 9 | [[L09-Deployment\|Deployment & Production]] | Put your AI app live on the internet |
+
+---
+
+## 🎯 Quick Start
+
+Already know the basics? Jump to:
+- **Want to code NOW?** → [[L02-LLM-APIs|Lesson 2]] (first real API call)
+- **Build something useful?** → [[L03-RAG|Lesson 3]] (your own RAG system)
+- **Make AI take action?** → [[L06-Function-Calling|Lesson 6]] (agents with tools)
+
+---
+
+## 📁 Free Certifications
+- [[free-certifications|Free AI Certs]] — Google, IBM, Microsoft, Alison
+
+---
+
+## 🏆 Projects — Build These for Your Portfolio
+
+| # | Project | What It Does | Lessons | CV Value | Status |
+|---|---------|-------------|---------|----------|--------|
+| 1 | **Visual Transformer** | See attention in action with a diagram | L1 | Medium | ⬜ |
+| 2 | **Email Assistant App** | AI that writes replies for you | L2 | High | ⬜ |
+| 3 | **Chat-With-Your-Docs** | Ask questions about YOUR files | L2, L3 | Very High | ⬜ |
+| 4 | **Custom Chatbot** | Fine-tuned on your conversation style | L4 | High | ⬜ |
+| 5 | **AI Test Suite** | Auto-grade your AI's answers | L5 | Medium | ⬜ |
+| 6 | **AI Assistant** | Claude with calculator + web search + email | L6 | Very High | ⬜ |
+| 7 | **File System MCP** | Connect AI to your computer files | L7 | High | ⬜ |
+| 8 | **Content Crew** | Writer + Critic + Editor agent team | L8 | Very High | ⬜ |
+| 9 | **Live RAG Chatbot** | Deployed on the internet, real users | L9 | Essential | ⬜ |
+
+---
+
+## 📋 Extra Topics (From Mentor Deck)
+These aren't in the 9 lessons but are critical for jobs:
+
+| Topic | Why You Need It | Where to Learn |
+|-------|-----------------|----------------|
+| **Git & PRs** | Every job uses this daily | Practice in your projects |
+| **Testing** | Unit, integration, API tests | Add to every project |
+| **Docker** | Every company packages apps this way | L9 covers basics |
+| **CI/CD** | Automated deploy pipelines | GitHub Actions |
+| **System design** | How full apps fit together | Build full-stack projects |
+| **Observability** | Logging, monitoring, tracing | [[L09-Deployment]] covers this |
+
+See [[mentor-deck-notes]] for the full breakdown and the 6-month roadmap.
+
+---

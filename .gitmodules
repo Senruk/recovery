@@ -1,0 +1,3 @@
+[submodule "projects/claude-brain-sessions"]
+	path = projects/claude-brain-sessions
+	url = https://github.com/Senruk/claude-brain-sessions.git

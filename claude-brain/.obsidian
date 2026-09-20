@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "4779a4d7dbfd016c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c3ed732ba9560ae3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a106abff6705028e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Career/Goals.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Goals"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eab2045a4d4e35cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "0fa6fada05b4f93e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e52ec50d36dc24d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "096fe621d113c389",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6ad5554566b7c2a3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "fa6399422d3a75b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1ec4ca3ff139be3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91f5b3f531cd35ab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "3322c573d7654280",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "e515f5bba5a18b54",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "caf3617ee5d730b9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8c12947cce7dcfbd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a106abff6705028e",
+  "lastOpenFiles": [
+    "clients/Mama's Table/menu.md",
+    "clients/Mama's Table/client.md",
+    "clients/Mama's Table",
+    "clients",
+    "_MOC.md.tmp.10928.7e4a80b17b11",
+    "Career/Call Script Cheat Sheet.md",
+    "Career/AI Engineering Roadmap.md",
+    "Career/6-Week Lock-In Plan.md",
+    "UK Driving Theory Study Plan.md",
+    "Session Log.md",
+    "CV Details.md",
+    "Clients.md",
+    "AZ-900 Study Plan.md",
+    "_MOC.md.tmp.10928.025801653758",
+    "Clients.md.tmp.10928.7d4474b7119b",
+    "CV Details.md.tmp.10928.7d33e5c5cbac",
+    "Projects/Renaissance/SYNC_NOTES.md",
+    "Projects/Renaissance/RenaissanceV2_DailyTracker.md",
+    "Projects/Renaissance",
+    "_MOC.md",
+    "MSK Creative/MSKCreations_Standard_Package_Service_Agreement.pdf",
+    "MSK Creative/MSKCreations_Standard_Package_Service_Agreement.md",
+    "Portfolio/SM Home Improvements.md",
+    "Portfolio/SM Home Improvements Website.md",
+    "Sessions/Session 2026-07-03 SM Home Improvements Website.md",
+    "Sessions/Session 2026-08-30 Renaissance Pivot + Deploy Blocker.md",
+    "MSK Creative/03 Welcome Document.md",
+    "MSK Creative/02 Invoice and Payment Terms.md",
+    "MSK Creative/01 Service Agreement.md",
+    "AI-Engineering/L07-MCP.md",
+    "AI-Engineering/L08-Multi-Agent.md",
+    "AI-Engineering/L09-Deployment.md",
+    "AI-Engineering/mentor-deck-notes.md",
+    "AI-Engineering/L01-Transformers-Basics.md",
+    "CV/_cv_text.txt",
+    "CV/Senruk_CV_Main.pdf",
+    "Assets/jarvis-layout.jpg",
+    "Assets/cm_svg_van.svg",
+    "Assets/cm_pollinations_test.png",
+    "renaissance-public/dist/icons.svg",
+    "renaissance-public/dist/favicon.svg"
+  ]
+}
